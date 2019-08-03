@@ -12,6 +12,7 @@ COMAR_ADDRESS = "tr.org.pardus.comar.updated"
 COMAR_IFACE = "tr.org.pardus.comar"
 COMAR_TIMEOUT = 10
 
+
 def main():
     if os.getuid() != 0:
         print("Must be run as root.")
@@ -69,6 +70,7 @@ def main():
             print("Registering %s" % filename)
 
     return 0
+
 
 if __name__ == "__main__":
     main()

@@ -9,6 +9,7 @@ import os
 
 import piksemel
 
+
 def printUsage():
     print("Usage: %s <command>" % sys.argv[0])
     print("Commands:")
@@ -19,6 +20,7 @@ def printUsage():
     print("  register <app> <model> <script.py>")
     print("  remove <app>")
     sys.exit(1)
+
 
 def introspect(link, path="/"):
     bus = dbus.SystemBus()
@@ -136,6 +138,7 @@ def main():
         printUsage()
 
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
